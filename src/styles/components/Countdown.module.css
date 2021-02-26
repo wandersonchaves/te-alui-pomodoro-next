@@ -56,11 +56,12 @@
   font-size: 1.25rem;
   font-weight: 600;
 
-  transition: background-color 0.2s;
+  transition: filter 0.2s;
 }
 
 .countdownButton:not(:disabled):hover {
-  background: var(--green);
+  filter: brightness(1.5);
+  /* background: var(--green); */
 }
 
 .countdownButtonActive {
@@ -69,7 +70,8 @@
 }
 
 .countdownButtonActive:not(:disabled):hover {
-  background: var(--green-dark);
+  filter: brightness(1.5);
+  /* background: var(--green-dark); */
   color: var(--white);
 }
 
