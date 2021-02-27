@@ -1,5 +1,5 @@
 // Imports
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 import challenges from "../../challenges.json";
 
 // Interfaces
@@ -8,6 +8,7 @@ interface Challenge {
   description: string;
   amount: number;
 }
+
 interface ChallengesContextData {
   level: number;
   currentExperience: number;
